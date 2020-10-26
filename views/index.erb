@@ -1,0 +1,13 @@
+<%= Time.now %>
+
+<p>
+  I'm in a <em>view</em>!
+</p>
+
+<ul>
+  <% @cookbook.recipes.each_with_index do |recipe, idx| %>
+    <li><%= "#{idx + 1} #{recipe.name} + #{a_with_index(index: idx.to_i+1)}" %> </li>
+  <% end %>
+</ul>
+
+<a href = '/new'> Click here to add a recipe </a>
