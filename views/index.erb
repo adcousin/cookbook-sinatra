@@ -6,7 +6,7 @@
 
 <ul>
   <% @cookbook.recipes.each_with_index do |recipe, idx| %>
-    <li><%= "#{idx + 1} #{recipe.name} + #{a_with_index(index: idx.to_i+1)}" %> </li>
+    <li><%= "#{idx + 1} #{recipe.name} + #{a_with_index(index: idx.to_i)}" %> </li>
   <% end %>
 </ul>
 
